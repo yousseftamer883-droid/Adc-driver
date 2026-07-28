@@ -1,0 +1,62 @@
+Youssef Tamer Modules
+
+1. GPIO Driver
+
+Functions
+
+* GPIO_Init()
+* GPIO_SetPinDirection()
+* GPIO_SetPinValue()
+* GPIO_GetPinValue()
+* GPIO_TogglePin()
+* GPIO_SetPortDirection()
+* GPIO_SetPortValue()
+* GPIO_GetPortValue()
+
+⸻
+
+2. ADC Driver
+
+Functions
+
+* ADC_Init()
+* ADC_StartConversion()
+* ADC_ReadChannel()
+* ADC_GetResult()
+
+⸻
+
+3. Timer Driver
+
+Functions
+
+* TIMER_Init()
+* TIMER_Start()
+* TIMER_Stop()
+* TIMER_SetDelay()
+* TIMER_SetCallback() (إذا استخدمت Interrupts)
+
+⸻
+
+4. Main Application
+
+Functions
+
+* System_Init()
+* Application_Start()
+* ReadSensors()
+* UpdateDisplay()
+* main()
+
+⸻
+
+5. Integration
+
+Responsibilities
+
+* Initialize all drivers.
+* Connect MCAL with HAL.
+* Call sensor functions.
+* Process sensor readings.
+* Send data to the LCD.
+* Test the complete system.
